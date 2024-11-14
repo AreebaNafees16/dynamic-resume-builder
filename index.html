@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="main">Dynamic Resume Builder By Areeba Muhammad Nafees</h1>
+    <div class="container">
+        <!-- Form Section for Resume Input -->
+        <div class="form-section">
+            <h2>Generate Your Resume</h2>
+            <form id="resume-form">
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" placeholder="Enter your job title" required>
+
+                <label for="summary">Summary:</label>
+                <textarea id="summary" placeholder="Brief summary about you" rows="3"></textarea>
+
+                <label for="education">Education:</label>
+                <textarea id="education" placeholder="Enter your education background" rows="3"></textarea>
+
+                <label for="skills">Skills (comma-separated):</label>
+                <input type="text" id="skills" placeholder="e.g., JavaScript, CSS, HTML" required>
+
+                <label for="experience">Experience:</label>
+                <textarea id="experience" placeholder="Describe your experience" rows="5"></textarea>
+
+                <button type="button" onclick="generateResume()">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Resume Display Section -->
+        <div class="resume-section" id="resume-section">
+            <h2>Resume</h2>
+            <div id="resume-content">
+                <!-- Generated resume content will appear here -->
+                <p>Fill out the form and click "Generate Resume" to see your resume here.</p>
+        
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
